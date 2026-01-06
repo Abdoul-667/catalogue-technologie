@@ -1,0 +1,14 @@
+{
+  "name": "catalogue-technologie",
+  "version": "1.0.0",
+  "description": "Catalogue d'accessoires Playstation pour projet web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "catalogue-technologie",
+  "license": "UNDEFINED",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

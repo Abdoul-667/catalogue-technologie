@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catalogue Playstation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Catalogue Playstation</h1>
+      <p>Découvrez nos accessoires</p>
+      <!-- Ajout de l'image -->
+      <img src="images/play.png" alt="Logo PlayStation" class="logo-play">
+    </header>
+
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="Rechercher par nom...">
+      <select id="categoryFilter">
+        <option value="all">Toutes catégories</option>
+        <option value="Manette">Manette</option>
+        <option value="Casque">Casque</option>
+        <option value="Accessoire">Accessoire</option>
+      </select>
+      <input id="maxPriceFilter" type="number" placeholder="Prix max (ex: 100)">
+      <button id="resetBtn">Réinitialiser</button>
+    </div>
+
+    <main id="productsContainer"></main>
+  </div>
+
+  <!-- Vue détaillée -->
+  <div id="productDetail" class="hidden">
+    <div class="detail-card">
+      <button id="closeDetail">Fermer</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
